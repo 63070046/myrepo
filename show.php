@@ -20,7 +20,7 @@
   $res = mysqli_query($conn, 'SELECT * FROM Guestbook');
   ?>
   <div class="jumbotron jumbotron-fluid">
-    <div class="container bg-dark text-white">
+    <div class="container">
       <h2>ITF Napat Phobutdee 63070046</h2>
       <p>Hover Rows</p>
     </div>
@@ -50,7 +50,7 @@
       }
       ?>
     </table>
-    <button type="add" class="btn btn-primary float-right">Add</button>
+    <button type="add" class="btn btn-primary float-mid">Add</button>
   </div>
   <?php
   mysqli_close($conn);
