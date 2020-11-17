@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="container">
-    <table class="table table-dark table-hover">
+    <table class="table table-hover">
       <thead>
         <tr>
           <th>Name</th>
@@ -50,7 +50,7 @@
       }
       ?>
     </table>
-    <button type="add" class="btn btn-primary float-mid">Add</button>
+    <button type="add" class="btn btn-primary float-middle">Add</button>
   </div>
   <?php
   mysqli_close($conn);
