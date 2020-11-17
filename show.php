@@ -46,8 +46,8 @@
       }
 ?>
 </table>
-</div>
 <button type="add" class="btn btn-primary">Add</button>
+</div>
 <?php
 mysqli_close($conn);
 ?>
