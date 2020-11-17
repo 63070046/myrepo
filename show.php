@@ -50,7 +50,7 @@
       }
       ?>
     </table>
-    <button type="add" class="btn btn-primary float-middle">Add</button>
+    <button type="add" class="btn btn-primary float-right">Add</button>
   </div>
   <?php
   mysqli_close($conn);
