@@ -28,23 +28,26 @@
           <th>Name</th>
           <th>Comment</th>
           <th>Link</th>
+          <th>Edit</th>
+          <th>Remove</th>
         </tr>
       </thead>
       <?php
       while ($Result = mysqli_fetch_array($res)) {
       ?>
-        <tr>
-          <td><?php echo $Result['Name']; ?>
-  </div>
-  </td>
+  <tr>
+  <td><?php echo $Result['Name']; ?></td>
   <td><?php echo $Result['Comment']; ?></td>
   <td><?php echo $Result['Link']; ?></td>
+  <td><button type="edit" class="btn btn-secondary">Edit</button></td>
+  <td><button type="remove" class="btn btn-danger">Remove</button></td>
   </tr>
 <?php
       }
 ?>
 </table>
 </div>
+<button type="add" class="btn btn-primary">Add</button>
 <?php
 mysqli_close($conn);
 ?>
