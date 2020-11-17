@@ -19,9 +19,13 @@
   }
   $res = mysqli_query($conn, 'SELECT * FROM Guestbook');
   ?>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container bg-dark text-white">
+      <h2>ITF Napat Phobutdee 63070046</h2>
+      <p>Hover Rows</p>
+    </div>
+  </div>
   <div class="container">
-    <h2>ITF Napat Phobutdee 63070046</h2>
-    <p>Hover Rows</p>
     <table class="table table-dark table-hover">
       <thead>
         <tr>
@@ -35,22 +39,22 @@
       <?php
       while ($Result = mysqli_fetch_array($res)) {
       ?>
-  <tr>
-  <td><?php echo $Result['Name']; ?></td>
-  <td><?php echo $Result['Comment']; ?></td>
-  <td><?php echo $Result['Link']; ?></td>
-  <td><button type="edit" class="btn btn-secondary">Edit</button></td>
-  <td><button type="remove" class="btn btn-danger">Remove</button></td>
-  </tr>
-<?php
+        <tr>
+          <td><?php echo $Result['Name']; ?></td>
+          <td><?php echo $Result['Comment']; ?></td>
+          <td><?php echo $Result['Link']; ?></td>
+          <td><button type="edit" class="btn btn-secondary">Edit</button></td>
+          <td><button type="remove" class="btn btn-danger">Remove</button></td>
+        </tr>
+      <?php
       }
-?>
-</table>
-<button type="add" class="btn btn-primary">Add</button>
-</div>
-<?php
-mysqli_close($conn);
-?>
+      ?>
+    </table>
+    <button type="add" class="btn btn-primary float-right">Add</button>
+  </div>
+  <?php
+  mysqli_close($conn);
+  ?>
 </body>
 
 </html>
