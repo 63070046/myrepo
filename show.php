@@ -52,7 +52,7 @@
       }
       ?>
     </table>
-    <a href="formadd.html" role = "button" class="btn btn-primary float-right">Add</a>
+    <a href="formadd.html" role = "button" class="btn btn-primary btn-block">Add</a>
   </div>
   <?php
   mysqli_close($conn);
