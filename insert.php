@@ -24,3 +24,10 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
+<html>
+
+<head>
+  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=show.php">
+</head>
+
+</html>

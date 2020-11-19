@@ -45,7 +45,7 @@
           <td><?php echo $Result['Name']; ?></td>
           <td><?php echo $Result['Comment']; ?></td>
           <td><?php echo $Result['Link']; ?></td>
-          <td><a href="formedit.html" role = "button" class="btn btn-secondary">Edit</a></td>
+          <td><a href="formedit.php?ID=<?php echo $Result['ID'];?>" role = "button" class="btn btn-secondary">Edit</a></td>
           <td><a href="remove.php?ID=<?php echo $Result['ID'];?>" role = "button" class="btn btn-danger">Remove</button></td>
         </tr>
       <?php
