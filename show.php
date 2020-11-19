@@ -21,8 +21,8 @@
   ?>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h2>ITF Napat Phobutdee 63070046</h2>
-      <p>Hover Rows</p>
+      <h2>Show Table</h2>
+      <p>ITF Napat Phobutdee 63070046</p>
     </div>
   </div>
   <div class="container">
@@ -52,7 +52,7 @@
       }
       ?>
     </table>
-    <button type="add" class="btn btn-primary float-right">Add</button>
+    <a href="formadd.html" button type="add" class="btn btn-primary float-right">Add</button>
   </div>
   <?php
   mysqli_close($conn);
