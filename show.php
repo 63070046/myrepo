@@ -29,6 +29,7 @@
     <table class="table table-hover">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Name</th>
           <th>Comment</th>
           <th>Link</th>
