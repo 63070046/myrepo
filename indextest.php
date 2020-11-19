@@ -1,4 +1,4 @@
-<?php // เรียกใช้ไฟล์ เชื่อมต่อ  database
+<?php
     include("connect_db.php");
 ?>
 <!doctype html>
@@ -32,7 +32,6 @@
                     </thead>
                     <tbody>
                         <?php
-                            // แสดงข้อมูลในตาราง
                             $sql = "SELECT * FROM tb_contact";
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
@@ -58,14 +57,12 @@
             </div>
             
             <?php
-                // isset ใช้สำหรับเช็คค่าว่างหรือไม่
                 if(isset($_GET['id'])){
                     $sql    = "SELECT * FROM tb_contact WHERE contact_id = '".$_GET['id']."'";
                     $result = $conn->query($sql);
                     $row    = $result->fetch_assoc();
 
             ?>
-                <!-- สำหรับแก้ไขข้อมูล -->
                 <form action="edit_contact.php" method="POST" >
                     <input type="hidden" name="contact_id" value="<?php echo $row['contact_id']; ?>" >
                     <div class="form-group">
@@ -92,7 +89,6 @@
             <?php 
                 } else { 
             ?>
-                <!-- สำหรับเพิ่มข้อมูล -->
                 <form action="add_contact.php" method="POST" >
                     <div class="form-group">
                         <label >Name</label>
