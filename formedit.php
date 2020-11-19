@@ -26,7 +26,7 @@
       <h2>Edit form</h2>
     </div>
     <div class="container">
-      <form action="update.php?ID=<?php echo $Result['ID'];?>" method="POST">
+      <form action="update.php" method="POST">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="idName" placeholder="Enter name" name="name">
