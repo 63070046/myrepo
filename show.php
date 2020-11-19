@@ -40,6 +40,7 @@
       while ($Result = mysqli_fetch_array($res)) {
       ?>
         <tr>
+          <td><?php echo $Result['ID']; ?></td>
           <td><?php echo $Result['Name']; ?></td>
           <td><?php echo $Result['Comment']; ?></td>
           <td><?php echo $Result['Link']; ?></td>
