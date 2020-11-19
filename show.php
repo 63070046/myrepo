@@ -45,14 +45,14 @@
           <td><?php echo $Result['Name']; ?></td>
           <td><?php echo $Result['Comment']; ?></td>
           <td><?php echo $Result['Link']; ?></td>
-          <td><button type="edit" class="btn btn-secondary">Edit</button></td>
+          <td><a href="formedit.html" role = "button" class="btn btn-secondary">Edit</a></td>
           <td><button type="remove" class="btn btn-danger">Remove</button></td>
         </tr>
       <?php
       }
       ?>
     </table>
-    <a href="formadd.html" button type="add" class="btn btn-primary float-right">Add</button>
+    <a href="formadd.html" role = "button" class="btn btn-primary float-right">Add</a>
   </div>
   <?php
   mysqli_close($conn);
