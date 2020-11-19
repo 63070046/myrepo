@@ -1,7 +1,6 @@
 <?php
     include("connect_db.php");
 ?>
-<!doctype html>
 <html lang="en">
 
 <head>
