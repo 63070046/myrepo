@@ -9,7 +9,7 @@ if (mysqli_connect_errno($conn))
 $bmi = $_POST['bmi']
 $name = $_POST['name'];
 $weight = $_POST['height'];
-$link = $_POST['link'];
+$height = $_POST['height'];
 $id = $_POST['id'];
 
 $sql = "UPDATE BMITable SET Name = '$name', weight = '$weight', height = '$height', bmi = '$bmi' WHERE ID = '".$id."'";
@@ -26,7 +26,7 @@ mysqli_close($conn);
 <html>
 
 <head>
-  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=show.php">
+  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=showT.php">
 </head>
 
 </html>

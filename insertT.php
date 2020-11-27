@@ -11,7 +11,7 @@ if (mysqli_connect_errno($conn))
 $name = $_POST['name'];
 $weight = $_POST['weight']
 $height = $_POST['height'];
-$bmi = $_POST['bmi'];
+$bmi = ($weight / ($height / 100)) ** 2;
 
 
 $sql = "INSERT INTO BMITable (Name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
@@ -28,7 +28,7 @@ mysqli_close($conn);
 <html>
 
 <head>
-  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=show.php">
+  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=showT.php">
 </head>
 
 </html>

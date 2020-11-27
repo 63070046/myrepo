@@ -18,7 +18,7 @@ mysqli_close($conn);
 <html>
 
 <head>
-  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=show.php">
+  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=showT.php">
 </head>
 
 </html>
