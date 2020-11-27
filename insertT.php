@@ -14,7 +14,7 @@ $height = $_POST['height'];
 $bmi = $weight / (($height / 100) * ($height / 100)) ;
 
 
-$sql = "INSERT INTO BMITable (Name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
+$sql = "INSERT INTO bmitable (Name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
 
 
 if (mysqli_query($conn, $sql)) {
