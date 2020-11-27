@@ -21,7 +21,7 @@
   ?>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h2>Show Table</h2>
+      <h2>Edit Table</h2>
       <p>ITF Napat Phobutdee 63070046</p>
     </div>
   </div>
