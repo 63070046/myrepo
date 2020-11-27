@@ -34,7 +34,6 @@
           <th>น้ำหนัก</th>
           <th>ส่วนสูง</th>
           <th>BMI</th>
-          <th>Remove</th>
         </tr>
       </thead>
       <?php

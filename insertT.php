@@ -9,9 +9,9 @@ if (mysqli_connect_errno($conn))
 
 
 $name = $_POST['name'];
-$weight = $_POST['weight']
+$weight = $_POST['weight'];
 $height = $_POST['height'];
-$bmi = $weight / (($height / 100) * ($height / 100)) ;
+$bmi = $weight / (($height / 100) * ($height / 100));
 
 
 $sql = "INSERT INTO bmitable (Name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
