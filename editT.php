@@ -17,7 +17,7 @@
   if (mysqli_connect_errno($conn)) {
     die('Failed to connect to MySQL: ' . mysqli_connect_error());
   }
-  $res = mysqli_query($conn, 'SELECT * FROM BMI');
+  $res = mysqli_query($conn, 'SELECT * FROM BMITable');
   ?>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -46,13 +46,12 @@
           <td><?php echo $Result['weight']; ?></td>
           <td><?php echo $Result['height']; ?></td>
           <td><?php echo $Result['bmi']; ?></td>
+          <td><a href="removeT.php?ID=<?php echo $Result['ID'];?>" role = "button" class="btn btn-danger">Remove</button></td>
         </tr>
       <?php
       }
       ?>
     </table>
-    <a href="formadd.html" role = "button" class="btn btn-primary">Add</a>
-    <a href="editT.php" role = "button" class="btn btn-danger">Remove</a>
   </div>
   <?php
   mysqli_close($conn);

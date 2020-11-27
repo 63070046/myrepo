@@ -12,7 +12,7 @@ $weight = $_POST['height'];
 $link = $_POST['link'];
 $id = $_POST['id'];
 
-$sql = "UPDATE BMITable SET Name = '$name', weight = '$weight', height = '$link', bmi = '$bmi' WHERE ID = '".$id."'";
+$sql = "UPDATE BMITable SET Name = '$name', weight = '$weight', height = '$height', bmi = '$bmi' WHERE ID = '".$id."'";
 
 
 if (mysqli_query($conn, $sql)) {
