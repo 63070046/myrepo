@@ -48,6 +48,9 @@
           <td><?php echo $Result['bmi']; ?></td>
           <td><a href="removeT.php?ID=<?php echo $Result['ID'];?>" role = "button" class="btn btn-danger">Remove</button></td>
         </tr>
+        <?php
+        }
+        ?>
     </table>
   </div>
   <?php
